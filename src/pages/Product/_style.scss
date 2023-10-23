@@ -1,0 +1,41 @@
+@use '../../scss/mixin' as ms;
+@use '../../scss/variable' as vs;
+
+.container {
+    @include ms.flexbox(space-between, center);
+}
+
+.add-product {
+    @include ms.border-table();
+    @include ms.flexbox(center, center);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.product-table {
+    th {
+        font-size: 1.2rem;
+        background-color: vs.$text-color;
+        color: vs.$primary-color;
+        @include ms.border-table();
+        padding: 10px 12px;
+    }
+
+    td {
+        @include ms.border-table();
+        padding: 10px 12px;
+
+        img {
+            width: 130px;
+        }
+    }
+
+    td:nth-of-type(5), td:nth-of-type(2), td:nth-of-type(4), td:last-of-type {
+        text-align: center;
+    }
+
+    td:nth-of-type(3), td:first-of-type {
+        width: 25%;
+    }
+}

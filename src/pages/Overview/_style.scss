@@ -1,0 +1,6 @@
+@use '../../scss/mixin' as ms;
+
+.overview {
+    @include ms.flexbox(space-between, center);
+    gap: 10px;
+}

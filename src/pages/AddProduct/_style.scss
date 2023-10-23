@@ -1,0 +1,23 @@
+@use '../../scss/mixin' as ms;
+
+.add-title {
+    text-align: center;
+}
+
+.add-container {
+    @include ms.container-ae;
+
+    .product-name-add .input-add, .desc-product-add .input-add, .harga-prduct-add .input-add, .stock-product-add .input-add {
+        @include ms.input-ae;
+        @include ms.flexbox(center, center);
+        column-gap: 8px;
+    }
+
+    .gambar-product-add {
+        margin-bottom: 20px;
+    }
+
+    .btn-add {
+        @include ms.auth-btn(10px);
+    }
+}

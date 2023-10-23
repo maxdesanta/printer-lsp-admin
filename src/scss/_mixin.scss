@@ -1,0 +1,81 @@
+@use 'variable' as vs;
+
+// global
+@mixin flexbox($justify-value, $align-value, $flex-value: row) {
+  display: flex;
+  justify-content: $justify-value;
+  align-items: $align-value;
+  flex-direction: $flex-value;
+}
+
+@mixin inputForm {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  width: vs.$width-percent;
+  color: vs.$text-color;
+}
+
+@mixin link($decoration-value: none) {
+  text-decoration: $decoration-value;
+  color: inherit;
+}
+
+@mixin list {
+  list-style-type: none;
+}
+
+@mixin table {
+  border-collapse: collapse;
+  width: vs.$width-percent;
+}
+
+// auth mixin
+@mixin auth-title {
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+
+@mixin auth-form {
+    border: 1px solid vs.$border-color;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+@mixin auth-btn($padding-value) {
+    font-size: 1.1rem;
+    background-color: vs.$secondary-color;
+    padding: $padding-value;
+    width: vs.$width-percent;
+    font-weight: 700;
+    border-radius: 10px;
+    color: vs.$primary-color;
+    margin-bottom: 6px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin auth-link {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+// mixin table
+@mixin border-table($color-value: vs.$text-color) {
+  border: 1px solid $color-value;
+}
+
+// mixin form add and edit product
+@mixin container-ae {
+  width: 60%;
+  margin: 50px auto;
+}
+
+@mixin input-ae {
+  border: 1px solid vs.$border-color;
+  padding: 10px 12px;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}

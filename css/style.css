@@ -1,0 +1,86 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  width: 100%;
+  color: #16161a;
+}
+
+.box-register {
+  padding: 94px;
+}
+.box-register .register-container {
+  padding: 20px 50px;
+  background-color: #fffffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.box-register .register-container .register-title {
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+.box-register .register-container .register-space {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.box-register .register-container .register-space .email-register, .box-register .register-container .register-space .password-register, .box-register .register-container .register-space .username-register, .box-register .register-container .register-space .telepon-register, .box-register .register-container .register-space .alamat-register {
+  border: 1px solid #010101;
+  padding: 10px 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-radius: 10px;
+}
+.box-register .register-container .register-space .container-name-telp-register, .box-register .register-container .register-space .container-email-pass-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.box-register .register-container .register-space .btn-register {
+  font-size: 1.1rem;
+  background-color: #7f5af0;
+  padding: 12px;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 10px;
+  color: #fffffe;
+  margin-bottom: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.box-register .register-container .link-login {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.box-register .register-container .link-login .link {
+  color: #7f5af0;
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+}/*# sourceMappingURL=style.css.map */

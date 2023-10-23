@@ -1,0 +1,32 @@
+@use '../../scss/mixin' as ms;
+@use '../../scss/variable' as vs;
+
+.sidebar {
+    background-color: vs.$text-color;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    @include ms.flexbox(space-between,center,column);
+}
+
+.container-menu {
+    @include ms.flexbox(space-between,center,column);
+    row-gap: 30px;
+}
+
+.menu {
+    color: vs.$primary-color;
+    @include ms.flexbox(center,center,column);
+    gap: 10px;
+}
+
+.btn-logout {
+    color: vs.$primary-color;
+    @include ms.flexbox(center,center);
+    font-size: 18px;
+    gap: 10px;
+    cursor: pointer;
+}

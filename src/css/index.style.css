@@ -1,0 +1,81 @@
+.box-login {
+  padding: 108px;
+}
+.box-login .login-container {
+  padding: 20px 50px;
+  background-color: #fffffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.box-login .login-container .login-title {
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+.box-login .login-container .email-login, .box-login .login-container .password-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 10px;
+  border: 1px solid #010101;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.box-login .login-container .btn-login {
+  font-size: 1.1rem;
+  background-color: #7f5af0;
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 10px;
+  color: #fffffe;
+  margin-bottom: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.box-login .login-container .link-register {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.box-login .login-container .link-register .link {
+  color: #fffffe;
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  width: 100%;
+  color: #16161a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*# sourceMappingURL=index.style.css.map */

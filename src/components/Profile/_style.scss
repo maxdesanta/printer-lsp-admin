@@ -1,0 +1,16 @@
+@use '../../scss/mixin' as ms;
+@use '../../scss/variable' as vs;
+
+.profile.wrapper {
+    @include ms.flexbox(center,center);
+    gap: 10px;
+
+    .p-image {
+        width: 40px;
+        height: 40px;
+        border: 1px solid vs.$secondary-color;
+        border-radius: 50%;
+        @include ms.flexbox(center,flex-end);
+        overflow: hidden;
+    }
+}

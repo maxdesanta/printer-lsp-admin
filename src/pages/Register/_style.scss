@@ -1,0 +1,49 @@
+@use '../../scss/variable' as vs;
+@use '../../scss/mixin' as ms;
+
+.box-register {
+    padding: 94px;
+
+    .register-container {
+        padding: 20px 50px;
+        background-color: vs.$primary-color;
+        @include ms.flexbox(center, center, column);
+        gap: 15px;
+
+        .register-title {
+            @include ms.auth-title();
+        }
+
+        .register-space{
+            @include ms.flexbox(space-evenly, space-evenly, column);
+            row-gap: 15px;
+
+            .email-register, .password-register, .username-register, .telepon-register, .alamat-register {
+                @include ms.flexbox(flex-start, center);
+                column-gap: 10px;
+                @include ms.auth-form();
+                width: vs.$width-percent;
+            }
+    
+            .container-name-telp-register, .container-email-pass-register {
+                @include ms.flexbox(center, center);
+                column-gap: 15px;
+            }
+    
+            .btn-register {
+                @include ms.auth-btn(12px);
+            }
+        }
+
+
+        .link-login {
+            @include ms.auth-link;
+
+            .link {
+                color: vs.$secondary-color;
+                font-weight: 700;
+                @include ms.link(underline);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use '../../scss/mixin' as ms;
+
+.update-title {
+    text-align: center;
+}
+
+.update-container {
+    @include ms.container-ae;
+
+    .product-name-update .input-update, .desc-product-update .input-update, .harga-product-update .input-update, .stock-product-update .input-update {
+        @include ms.input-ae;
+        @include ms.flexbox(center, center);
+        column-gap: 8px;
+    }
+
+    .gambar-product-update {
+        padding: 10px 0;
+    }
+    
+    .btn-update {
+        @include ms.auth-btn(10px);
+    }
+    
+}

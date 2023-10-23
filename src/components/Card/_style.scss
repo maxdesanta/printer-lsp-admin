@@ -1,0 +1,19 @@
+@use '../../scss/mixin' as ms;
+@use '../../scss/variable' as vs;
+
+.card {
+    @include ms.border-table();
+    @include ms.flexbox(center,center,column);
+    row-gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    P:last-of-type {
+        color: vs.$secondary-color;
+    }
+}

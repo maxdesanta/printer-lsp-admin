@@ -1,0 +1,39 @@
+@use '../../scss/variable' as vs;
+@use '../../scss/mixin' as ms;
+
+.box-login {
+    padding: 108px;
+
+    .login-container {
+        padding: 20px 50px;
+        background-color: vs.$primary-color;
+        @include ms.flexbox(center,center,column);
+        gap: 20px;
+
+        .login-title {
+            @include ms.auth-title();
+        }
+
+        .email-login, .password-login {
+            @include ms.flexbox(center,center, row);
+            column-gap: 10px;
+            @include ms.auth-form();
+            margin-bottom: 15px;
+        }
+
+        .btn-login {
+            @include ms.auth-btn(10px);
+        }
+        
+        .link-register {
+            @include ms.auth-link;
+
+            .link {
+                color: vs.$primary-color;
+                font-weight: 700;
+                @include ms.link(underline);
+            }
+        }
+    }
+
+}

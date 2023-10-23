@@ -1,0 +1,11 @@
+@use '../../scss/mixin' as ms;
+@use '../../scss/variable' as vs;
+
+.search {
+    @include ms.flexbox(space-between, center);
+    @include ms.border-table();
+    padding: 10px;
+    margin-right: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
